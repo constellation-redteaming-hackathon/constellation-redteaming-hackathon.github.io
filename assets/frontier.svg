@@ -85,18 +85,12 @@
   />
   <g
     font-family="'Helvetica Neue', Arial, sans-serif"
-    font-size="12"
+    font-size="14"
     fill="#535e48"
   >
-    <text x="274" y="459" text-anchor="middle" letter-spacing="1.5">
-      EFFORT
-    </text>
-    <text
-      transform="translate(22 226) rotate(-90)"
-      text-anchor="middle"
-      letter-spacing="1.5"
-    >
-      MISALIGNED CAPABILITIES
+    <text x="274" y="459" text-anchor="middle">Red-teaming effort</text>
+    <text transform="translate(22 226) rotate(-90)" text-anchor="middle">
+      Misaligned capabilities
     </text>
     <text x="342" y="67" font-size="11" fill="#b5412c">
       Efficiency frontier

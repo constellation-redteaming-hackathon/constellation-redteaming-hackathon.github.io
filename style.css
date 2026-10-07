@@ -54,15 +54,6 @@ figure {
   width: min(1200px, calc(100% - 112px));
   margin-inline: auto;
 }
-.eyebrow {
-  font:
-    11px/1.5 "SFMono-Regular",
-    Consolas,
-    "Liberation Mono",
-    monospace;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
 .skip-link {
   position: absolute;
   z-index: 5;
@@ -88,10 +79,9 @@ figure {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.4;
-  letter-spacing: 0.035em;
 }
 .site-header nav {
   display: flex;
@@ -138,6 +128,8 @@ figure {
   gap: 10px;
   white-space: nowrap;
   margin-bottom: 26px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .date-dot {
   width: 7px;
@@ -215,27 +207,10 @@ h1 > span {
   padding: 24px 22px 20px;
   position: relative;
 }
-.figure-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-.figure-heading .eyebrow {
-  font-size: 10px;
-  letter-spacing: 0.07em;
-}
-.figure-index {
-  font:
-    11px/1.5 "SFMono-Regular",
-    Consolas,
-    monospace;
-  color: var(--muted);
-}
 .frontier-art {
   width: 100%;
   height: auto;
-  margin-block: 26px 15px;
+  margin-bottom: 15px;
 }
 .frontier-figure figcaption {
   padding-top: 17px;
@@ -244,10 +219,8 @@ h1 > span {
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  font:
-    9px/1.5 "SFMono-Regular",
-    Consolas,
-    monospace;
+  font-size: 12px;
+  line-height: 1.5;
   color: #646b59;
 }
 .figure-key {
@@ -264,23 +237,39 @@ h1 > span {
   border-top: 1px solid var(--line);
   padding-block: 72px 80px;
 }
-.section-label {
-  color: var(--red);
-  margin-bottom: 21px;
-}
 h2 {
   font-size: clamp(33px, 3.5vw, 46px);
   line-height: 1.08;
   font-weight: 500;
   letter-spacing: -0.055em;
 }
+.numbered-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+.section-number {
+  flex-shrink: 0;
+  color: var(--red);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.heading-copy {
+  min-width: 0;
+}
+.research-question {
+  display: block;
+  text-wrap: balance;
+}
+.research-question + .research-question {
+  margin-top: 24px;
+  color: var(--red);
+}
 .section-intro {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   column-gap: 58px;
-}
-.section-intro .section-label {
-  grid-column: 1 / -1;
 }
 .section-description {
   color: var(--muted);
@@ -306,9 +295,11 @@ h2 {
   flex-direction: column;
   overflow: hidden;
 }
-.date-poster .eyebrow {
+.poster-date {
   border-bottom: 1px solid #dc8a78;
   padding-bottom: 19px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .poster-month {
   font-size: clamp(54px, 6.2vw, 82px);
@@ -326,10 +317,8 @@ h2 {
   margin-bottom: 23px;
 }
 .poster-caption {
-  font:
-    10px/1.6 "SFMono-Regular",
-    Consolas,
-    monospace;
+  font-size: 14px;
+  line-height: 1.6;
   border-top: 1px solid #dc8a78;
   padding-top: 19px;
 }
@@ -416,10 +405,6 @@ h2 {
   gap: 58px;
   align-items: center;
 }
-.interest-eyebrow {
-  color: var(--green);
-  margin-bottom: 24px;
-}
 .interest-inner h2 {
   font-size: clamp(48px, 5.7vw, 74px);
 }
@@ -440,10 +425,8 @@ h2 {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  font:
-    11px/1.6 "SFMono-Regular",
-    Consolas,
-    monospace;
+  font-size: 13px;
+  line-height: 1.6;
   color: var(--green);
   margin-bottom: 20px;
 }
@@ -500,7 +483,7 @@ h2 {
     gap: 8px;
   }
   .event-date {
-    font-size: 10px;
+    font-size: 13px;
     gap: 7px;
   }
   .day-section,
@@ -526,7 +509,7 @@ h2 {
     display: none;
   }
   .wordmark {
-    font-size: 9px;
+    font-size: 12px;
     gap: 8px;
   }
   .wordmark img {
@@ -554,7 +537,7 @@ h2 {
     max-width: 480px;
   }
   .event-date {
-    font-size: 10px;
+    font-size: 13px;
     gap: 9px;
     margin-bottom: 23px;
   }
@@ -563,7 +546,7 @@ h2 {
   }
   .frontier-art {
     max-height: 410px;
-    margin-block: 20px 13px;
+    margin-bottom: 13px;
   }
   .frontier-figure figcaption {
     flex-wrap: nowrap;
@@ -594,7 +577,7 @@ h2 {
     padding: 23px 26px;
     align-items: center;
   }
-  .date-poster .eyebrow {
+  .poster-date {
     grid-column: 1 / -1;
   }
   .poster-month {
@@ -654,18 +637,14 @@ h2 {
     gap: 7px;
   }
   .event-date {
-    font-size: 9px;
+    font-size: 12px;
     gap: 7px;
   }
   .frontier-figure {
     padding-inline: 15px;
   }
   .frontier-figure figcaption {
-    font-size: 8px;
     gap: 6px;
-  }
-  .figure-heading .eyebrow {
-    font-size: 9px;
   }
   h2 {
     font-size: 33px;
@@ -714,7 +693,6 @@ h2 {
     color: var(--ink);
   }
   .interest-inner > div > p:last-child,
-  .interest-eyebrow,
   .signup-status {
     color: var(--ink);
   }
