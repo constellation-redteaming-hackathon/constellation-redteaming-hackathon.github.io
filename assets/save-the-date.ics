@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Open-weight Red-teaming Hackathon//Save the date//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20261107@constellation-redteaming-hackathon.github.io
+DTSTAMP:20261007T120000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Open-weight Red-teaming Hackathon
+LOCATION:Constellation
+DESCRIPTION:Save the date. Event times and further information will follow.
+URL:https://constellation-redteaming-hackathon.github.io/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
