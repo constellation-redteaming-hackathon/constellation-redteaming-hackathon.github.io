@@ -38,7 +38,6 @@ img {
 }
 h1,
 h2,
-h3,
 p,
 figure {
   margin: 0;
@@ -112,10 +111,18 @@ figure {
   gap: 24px;
   border: 1px solid var(--ink);
   padding: 12px 17px;
+  line-height: 1.25;
 }
-.nav-cta span {
-  font-size: 18px;
-  line-height: 1;
+.action-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .hero {
@@ -180,13 +187,10 @@ h1 > span {
   gap: 46px;
   font-size: 13px;
   font-weight: 500;
+  line-height: 1.25;
   transition:
     background-color 0.16s,
     color 0.16s;
-}
-.button span {
-  font-size: 21px;
-  line-height: 0.8;
 }
 .button-dark {
   background: var(--ink);
@@ -256,32 +260,9 @@ h1 > span {
   height: 2px;
   background: var(--red);
 }
-.event-strip {
-  border-block: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  padding-block: 22px;
-  font:
-    11px/1.5 "SFMono-Regular",
-    Consolas,
-    monospace;
-  color: var(--muted);
-}
-.event-strip span {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-}
-.event-strip b {
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--red);
-  line-height: 1;
-}
-
 .about-section {
-  padding-block: 97px 96px;
+  border-top: 1px solid var(--line);
+  padding-block: 72px 80px;
 }
 .section-label {
   color: var(--red);
@@ -310,37 +291,6 @@ h2 {
 .section-intro .section-description {
   align-self: center;
 }
-.principles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 42px;
-  margin-top: 54px;
-}
-.principle {
-  border-top: 1px solid var(--line);
-  padding-top: 21px;
-}
-.principle-number {
-  font:
-    11px/1.5 "SFMono-Regular",
-    Consolas,
-    monospace;
-  color: var(--red);
-}
-h3 {
-  margin-top: 25px;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: -0.035em;
-}
-.principle p {
-  margin-top: 13px;
-  font-size: 14px;
-  line-height: 1.8;
-  color: var(--muted);
-  max-width: 315px;
-}
-
 .day-section {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -646,16 +596,8 @@ h3 {
   .frontier-figure figcaption {
     flex-wrap: nowrap;
   }
-  .event-strip {
-    flex-direction: column;
-    gap: 16px;
-    padding-block: 23px;
-  }
-  .event-strip span {
-    font-size: 11px;
-  }
   .about-section {
-    padding-block: 65px;
+    padding-block: 50px 56px;
   }
   .section-intro {
     grid-template-columns: 1fr;
@@ -668,28 +610,6 @@ h3 {
   }
   .section-intro .section-description {
     margin-top: 22px;
-  }
-  .principles {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin-top: 36px;
-  }
-  .principle {
-    display: grid;
-    grid-template-columns: 32px 1fr;
-    column-gap: 13px;
-    padding-top: 20px;
-  }
-  .principle-number {
-    grid-row: 1 / 3;
-    padding-top: 4px;
-  }
-  h3 {
-    margin-top: 0;
-  }
-  .principle p {
-    max-width: 480px;
-    margin-top: 9px;
   }
   .day-section {
     grid-template-columns: 1fr;
