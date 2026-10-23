@@ -38,6 +38,7 @@ img {
 }
 h1,
 h2,
+h3,
 p,
 figure {
   margin: 0;
@@ -201,18 +202,18 @@ h1 > span {
 .text-link:hover {
   color: var(--red);
 }
-.frontier-figure {
+.genealogy-figure {
   background: var(--chart);
   border: 1px solid #d8dccd;
   padding: 24px 22px 20px;
   position: relative;
 }
-.frontier-art {
+.genealogy-art {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
-.frontier-figure figcaption {
+.genealogy-figure figcaption {
   padding-top: 17px;
   border-top: 1px solid #cbd0bf;
   display: flex;
@@ -280,6 +281,24 @@ h2 {
 .section-intro .section-description {
   align-self: center;
 }
+.motivation-copy p + p,
+.challenge-brief p + p {
+  margin-top: 18px;
+}
+h3 {
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+.challenge-brief {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  column-gap: 58px;
+  padding-top: 34px;
+  margin-top: 42px;
+  border-top: 1px solid var(--line);
+}
 .day-section {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -341,12 +360,47 @@ h2 {
 }
 .event-details dd {
   margin: 0;
+  line-height: 1.6;
 }
 .small-note {
   font-size: 12px;
   line-height: 1.7;
   color: var(--muted);
   margin-top: 18px;
+}
+.day-schedule {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  column-gap: 86px;
+  align-items: start;
+}
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.schedule-list li {
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding-block: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.schedule-list li:first-child {
+  border-top: 1px solid var(--line);
+}
+.schedule-list time {
+  color: var(--red);
+  font-variant-numeric: tabular-nums;
+}
+.schedule-list small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .faq-section {
@@ -463,7 +517,8 @@ h2 {
     width: calc(100% - 72px);
   }
   .hero,
-  .section-intro {
+  .section-intro,
+  .challenge-brief {
     column-gap: 34px;
   }
   h1 {
@@ -475,10 +530,10 @@ h2 {
   .hero-actions {
     gap: 19px;
   }
-  .frontier-figure {
+  .genealogy-figure {
     padding-inline: 16px;
   }
-  .frontier-figure figcaption {
+  .genealogy-figure figcaption {
     flex-wrap: wrap;
     gap: 8px;
   }
@@ -487,6 +542,7 @@ h2 {
     gap: 7px;
   }
   .day-section,
+  .day-schedule,
   .faq-section {
     gap: 53px;
   }
@@ -541,21 +597,27 @@ h2 {
     gap: 9px;
     margin-bottom: 23px;
   }
-  .frontier-figure {
+  .genealogy-figure {
     padding: 23px 22px 20px;
   }
-  .frontier-art {
+  .genealogy-art {
     max-height: 410px;
     margin-bottom: 13px;
   }
-  .frontier-figure figcaption {
+  .genealogy-figure figcaption {
     flex-wrap: nowrap;
   }
   .about-section {
     padding-block: 50px 56px;
   }
-  .section-intro {
+  .section-intro,
+  .challenge-brief {
     grid-template-columns: 1fr;
+  }
+  .challenge-brief {
+    gap: 20px;
+    padding-top: 28px;
+    margin-top: 32px;
   }
   h2 {
     font-size: 36px;
@@ -594,6 +656,14 @@ h2 {
   }
   .day-copy .section-description {
     max-width: 530px;
+  }
+  .day-schedule {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 12px;
+  }
+  .schedule-list li {
+    gap: 15px;
   }
   .faq-section {
     grid-template-columns: 1fr;
@@ -640,10 +710,10 @@ h2 {
     font-size: 12px;
     gap: 7px;
   }
-  .frontier-figure {
+  .genealogy-figure {
     padding-inline: 15px;
   }
-  .frontier-figure figcaption {
+  .genealogy-figure figcaption {
     gap: 6px;
   }
   h2 {
@@ -701,9 +771,10 @@ h2 {
     background: none;
     color: var(--ink);
   }
-  .day-section,
   .interest-inner,
-  .frontier-figure {
+  .genealogy-figure,
+  .date-poster,
+  .schedule-list li {
     break-inside: avoid;
   }
 }

@@ -1,17 +1,20 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Open-weight Red-teaming Hackathon//Save the date//EN
+PRODID:-//Model Genealogy Hackathon//Save the date//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:20261107@constellation-redteaming-hackathon.github.io
-DTSTAMP:20261007T120000Z
-DTSTART;VALUE=DATE:20261107
-DTEND;VALUE=DATE:20261108
-SUMMARY:Open-weight Red-teaming Hackathon
-LOCATION:Constellation
-DESCRIPTION:Save the date. Event times and further information will follow.
+DTSTAMP:20261023T192340Z
+LAST-MODIFIED:20261023T192340Z
+SEQUENCE:1
+DTSTART:20261205T163000Z
+DTEND:20261206T040000Z
+SUMMARY:Model Genealogy Hackathon
+LOCATION:Constellation 6E
+DESCRIPTION:Identify the teachers behind distilled models. Teams of 3-5.\nD
+ ecember 5\, 2026\, 8:30am-8pm Pacific.
 URL:https://constellation-redteaming-hackathon.github.io/
-TRANSP:TRANSPARENT
+TRANSP:OPAQUE
 END:VEVENT
 END:VCALENDAR

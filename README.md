@@ -1,6 +1,7 @@
-# Open-weight Red-teaming Hackathon
+# Model Genealogy Hackathon
 
-Public landing page for the November 7, 2026 hackathon at Constellation.
+Public landing page for the December 5, 2026 hackathon at Constellation 6E,
+8:30am–8pm Pacific. Participants identify the teachers behind distilled models.
 
 Live site: <https://constellation-redteaming-hackathon.github.io/>
 
@@ -24,9 +25,10 @@ Pages serve the files directly. All page assets use relative paths.
 
 ## Expressions of interest
 
-The first draft clearly marks the interest form as coming soon. It does not collect
+The page clearly marks the application form as coming soon. It does not collect
 or store personal information. The calendar download is functional and reserves
-the date without assuming event hours.
+the event hours in Pacific time. Its stable event UID is retained from the original
+save-the-date, with an updated sequence, so calendar clients can identify the change.
 
 When a hosted interest form is ready, update the `#interest` section in `index.html`
 with a link to that form and revise the coming-soon copy. Keep personal signup data
@@ -36,9 +38,9 @@ in the form service, outside this public repository.
 
 - `index.html`: public event copy, navigation, and expandable FAQs.
 - `style.css`: responsive layout, colors, and print/reduced-motion styles.
-- `assets/frontier.svg`: a conceptual illustration, not measured results.
+- `assets/genealogy.svg`: an illustrative model-lineage diagram, not measured results.
 - `assets/mark.svg`: the page icon and wordmark symbol.
-- `assets/save-the-date.ics`: the November 7 calendar event.
+- `assets/save-the-date.ics`: the December 5 calendar event, 8:30am–8pm Pacific.
 
 Only approved public event information belongs in this repository. Review page
 copy, metadata, assets, and commit contents before publishing updates.
